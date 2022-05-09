@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Courses",
+    "\\Courses\\PROG1070",
+    "\\Courses\\PROG1070\\Modules",
+    "\\Courses\\PROG1070\\Modules\\Module 2 - Basic programming and repositories",
+    "\\Courses\\PROG1070\\Modules\\Module 2 - Basic programming and repositories\\Assignments"
   ],
   "PreviewInSolutionExplorer": false
 }
