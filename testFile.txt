@@ -1,0 +1,12 @@
+"I should have been a pair of ragged claws scuttling across the floor of silent seas . . ."
+- T. S. Eliot
+
+CREATE TABLE [dbo].[ProductTbl]
+(
+	[ID] INT NOT NULL PRIMARY KEY, 
+    [Name] VARCHAR(50) NOT NULL, 
+    [Description] VARCHAR(50) NOT NULL, 
+    [Price] DECIMAL(19,2) NOT NULL, 
+    [Quantity] INT NOT NULL, 
+    [Category] VARCHAR(50) NOT NULL
+)
