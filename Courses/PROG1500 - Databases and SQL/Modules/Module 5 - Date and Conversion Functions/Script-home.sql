@@ -18,3 +18,36 @@
 --WHERE enroll_date BETWEEN '01-JAN-07' AND '01-FEB-07' 
 --	AND final_grade IS NOT NULL;
 
+--SELECT TO_CHAR(TO_DATE('03-JAN-2011', 'DD-MON-YYYY')) 
+--		AS "Semester Start Date", 
+--	   TO_CHAR(TO_DATE('03-JAN-2011', 'DD-MON-YYYY')+105, 'DD-MON-YYYY') 
+--	   	AS "Semester End Date"
+--FROM DUAL;
+
+SELECT course_no, TO_NUMBER(LTRIM(location, 'M')) AS M_BLDG
+	FROM section
+WHERE location LIKE 'M%' 
+	AND TO_NUMBER(M_BLDG) / 2 IS NOT NULL;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
