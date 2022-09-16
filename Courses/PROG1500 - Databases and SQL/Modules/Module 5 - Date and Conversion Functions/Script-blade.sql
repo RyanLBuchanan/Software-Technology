@@ -19,5 +19,6 @@
 --ORDER BY 'Years Since Registration' DESC;
 
 --9.	Create a list of starting times for all course sections. Eliminate duplicates. Show only the time of day as "Start Time".
-SELECT UNIQUE(section_id), TO_CHAR(start_date_time, 'HH24:MI') AS "Start Time"
+SELECT UNIQUE(section_id), TO_CHAR(start_date_time, 'HH24:MI') 
+		AS "Start Time"
 	FROM section;

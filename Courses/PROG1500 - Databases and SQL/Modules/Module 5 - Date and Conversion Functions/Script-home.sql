@@ -24,10 +24,12 @@
 --	   	AS "Semester End Date"
 --FROM DUAL;
 
+--6.	Provide a list of course numbers and locations for sections being taught in the odd numbered rooms located in building M.
 SELECT course_no, TO_NUMBER(LTRIM(location, 'M')) AS M_BLDG
 	FROM section
 WHERE location LIKE 'M%' 
-	AND TO_NUMBER(M_BLDG) / 2 IS NOT NULL;
+--	AND TO_NUMBER(M_BLDG) / 2 IS NOT NULL;
+
 
 
 
