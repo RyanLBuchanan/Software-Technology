@@ -1,0 +1,2 @@
+--1.  List the course number, description and cost for all courses taught by Charles Lowry.
+--Arrange the list in order of course number.
