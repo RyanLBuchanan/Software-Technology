@@ -15,7 +15,7 @@
 --WHERE section_id = 147;
 
 --4.	List the city, state and number of zip codes for all cities with more than one zip code. Arrange by state and city.
-SELECT city, state, zip
+SELECT city, state, zip, COUNT(DISTINCT zip) AS "Zip Codes per City" 
 	FROM zipcode
-WHERE COUNT(zip IN city) > 1
-ORDER BY state, city;
+GROUP BY state, city, zip;
+--ORDER BY state, city;
