@@ -49,3 +49,20 @@
 --));
 
 --3.	List the name and phone number of instructors who have never taught a course section.
+--SELECT instructor_id, first_name, last_name
+--	FROM instructor
+--WHERE instructor_id NOT IN 
+--	(SELECT instructor_id
+--		FROM section)
+--ORDER BY instructor_id;
+
+--4.	Generate an alphabetic listing containing the last names and final exam grade (FI) of students who scored above average on the final exam for section 89.
+SELECT s.last_name, g.numeric_grade
+	FROM student s, grade g
+WHERE (s.student_id = 89)
+	AND (g.grade_type_code = 'FI')
+	AND (g.numeric_grade > 
+		(SELECT AVG(numeric_grade)
+			FROM grade))
+ORDER BY s.last_name;
+
