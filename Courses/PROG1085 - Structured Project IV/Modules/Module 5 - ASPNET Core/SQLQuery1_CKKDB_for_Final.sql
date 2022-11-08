@@ -66,20 +66,20 @@ CREATE TABLE [dbo].[Orders](
 ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[ProductTbl]    Script Date: 10/10/2022 1:48:37 PM 
+/****** Object:  Table [dbo].[Products]    Script Date: 10/10/2022 1:48:37 PM 
 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-CREATE TABLE [dbo].[ProductTbl](
+CREATE TABLE [dbo].[Products](
 [Id] [int] IDENTITY(1,1) NOT NULL,
 [Name] [nvarchar](max) NULL,
 [Description] [nvarchar](max) NULL,
 [Price] [decimal](19, 2) NOT NULL,
 [Quantity] [int] NOT NULL,
 [Category] [nvarchar](max) NULL,
- CONSTRAINT [PK_ProductTbl] PRIMARY KEY CLUSTERED 
+ CONSTRAINT [PK_Products] PRIMARY KEY CLUSTERED 
 (
 [Id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, 
